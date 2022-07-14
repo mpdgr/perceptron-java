@@ -45,15 +45,12 @@ public class Main {
         //print result
         System.out.println("\nNr of learning iterations: " + nrOfFeedPoints);
         System.out.println("Learning time: " + totalTime + " milliseconds");
-        System.out.println("Initial X weight value: " + perceptron.initialWeightX);
-        System.out.println("Initial Y weight value: " + perceptron.weightY);
-        System.out.println("Final X weight value: " + perceptron.weightX);
         System.out.println("\nCorrect answers: " + score + " out of " + nrOfTestPoints);
     }
 
     //verification function
     public static boolean verifierFunction (Point p) {
-        return p.y > p.x * 2;
+        return p.getY() > p.getX() * 2;
     }
 }
 
