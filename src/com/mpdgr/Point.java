@@ -1,4 +1,4 @@
-package com.company;
+package com.mpdgr;
 
 public class Point {
     private final double x;
